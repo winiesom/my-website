@@ -1,9 +1,12 @@
 import React from "react";
+import "./App.css";
+
+import LandingPage from "./components/landingPage/LandingPage";
 
 const App = () => {
   return (
     <div>
-      <h1>HELLO WORLD!!!</h1>
+      <LandingPage />
     </div>
   );
 };

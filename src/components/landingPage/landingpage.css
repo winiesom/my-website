@@ -1,0 +1,21 @@
+.main-container {
+  background: #cfe8fc;
+  height: auto;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.inner-container {
+  background: #083d77;
+  height: 500px;
+  max-width: 100%;
+}
+
+.appbar-container {
+  padding: 0 60px !important;
+}
+.appbar {
+  background: transparent !important;
+  /* box-shadow: none !important; */
+}
