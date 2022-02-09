@@ -40,6 +40,7 @@
 
 .appbar-links-style {
   text-decoration: none;
+  color: #4b0082;
 }
 .appbar-links-style:hover {
   color: #7e26bd !important;
