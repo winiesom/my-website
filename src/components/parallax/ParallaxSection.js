@@ -3,14 +3,14 @@ import "./parallax.css";
 
 import { Parallax } from "react-parallax";
 
-import imgFour from "../../assets/images/imgFour.jpg";
+import imgSeven from "../../assets/images/imgSeven.jpg";
 
 const ParallaxSection = () => {
   return (
     <div>
       <Parallax
         blur={1}
-        bgImage={imgFour}
+        bgImage={imgSeven}
         bgImageAlt="Front end solutions"
         strength={200}
         className="parallax-bg">

@@ -95,7 +95,6 @@ const LandingPage = () => {
                     }}>
                     {pages.map((page) => (
                       <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                        {/* <Typography textAlign="center">{page.name}</Typography> */}
                         <a
                           href={`#${page.section}`}
                           className="appbar-links-style">
@@ -195,7 +194,9 @@ const LandingPage = () => {
                       download>
                       Download CV
                     </Button>
-                    <Button className="hero-button">Hire Me</Button>
+                    <Button className="hero-button" href="#s3">
+                      Hire Me
+                    </Button>
                   </div>
                 </div>
               </Grid>
@@ -265,8 +266,10 @@ const LandingPage = () => {
               lg={4}
               xl={4}
               className="contact-item">
-              <PhoneIphoneIcon sx={{ fontSize: 80, color: "#4b0082" }} />
               <a href="tel:+233263105085" className="contact-links">
+                <PhoneIphoneIcon
+                  sx={{ fontSize: 70, color: "#ffffffb0", marginBottom: 3 }}
+                />
                 +233 26 310 5085
               </a>
             </Grid>
@@ -278,8 +281,10 @@ const LandingPage = () => {
               lg={4}
               xl={4}
               className="contact-item">
-              <MailIcon sx={{ fontSize: 80, color: "#4b0082" }} />
               <a href="mailto:winiesom@gmail.com" className="contact-links">
+                <MailIcon
+                  sx={{ fontSize: 70, color: "#ffffffb0", marginBottom: 3 }}
+                />
                 winiesom@gmail.com
               </a>
             </Grid>
@@ -291,20 +296,94 @@ const LandingPage = () => {
               lg={4}
               xl={4}
               className="contact-item">
-              <LinkedInIcon sx={{ fontSize: 80, color: "#4b0082" }} />
-
               <a
                 href="https://www.linkedin.com/in/winifred-esomonu-358502196/"
                 target="_blank"
                 rel="noreferrer"
                 className="contact-links">
+                <LinkedInIcon
+                  sx={{ fontSize: 70, color: "#ffffffb0", marginBottom: 3 }}
+                />
                 LinkedIn
               </a>
             </Grid>
           </Grid>
         </Container>
         <Container maxWidth="xl" className="footer-container">
-          footer
+          <Grid container spacing={2} className="footer-box">
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+              <div className="footer-title">Explore</div>
+              <div className="footer-links-box">
+                <a href="#s2" className="footer-link">
+                  About
+                </a>
+                <a href="#s2" className="footer-link">
+                  portfolio
+                </a>
+                <a href="#s2" className="footer-link">
+                  resume
+                </a>
+                <a href="#s3" className="footer-link">
+                  contact
+                </a>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+              <div className="footer-title">Connect</div>
+              <div className="footer-links-box">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer-link">
+                  facebook
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer-link">
+                  instagram
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer-link">
+                  twitter
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/winifred-esomonu-358502196/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer-link">
+                  LinkedIn
+                </a>
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+              <div className="footer-title">Contact Info</div>
+              <div className="footer-links-box">
+                <a href="tel:+233263105085" className="footer-link">
+                  <div className="footer-link-icon">
+                    <PhoneIcon
+                      sx={{ fontSize: 20, marginRight: 1, marginTop: 0.5 }}
+                    />
+
+                    <div>+233 26 310 5085</div>
+                  </div>
+                </a>
+                <a href="mailto:winiesom@gmail.com" className="footer-link">
+                  <div className="footer-link-icon">
+                    <MailIcon
+                      sx={{ fontSize: 20, marginRight: 1, marginTop: 0.5 }}
+                    />
+                    <div>winiesom@gmail.com</div>
+                  </div>
+                </a>
+              </div>
+            </Grid>
+          </Grid>
         </Container>
       </Container>
     </div>
