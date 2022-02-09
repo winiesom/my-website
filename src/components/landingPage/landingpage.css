@@ -8,7 +8,7 @@
 
 .inner-container {
   background: #e9eff9;
-  height: 800px;
+  height: 900px;
   max-width: 100%;
 }
 
@@ -16,7 +16,7 @@
   padding: 0 200px !important;
   /* border: 1px solid red; */
 }
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .appbar-container {
     padding: 0 30px !important;
   }
@@ -39,8 +39,15 @@
   width: 100px !important;
   height: 70px !important;
 }
-.appbar-links:hover {
-  color: #e21144 !important;
+
+.appbar-links-style {
+  text-decoration: none;
+}
+.appbar-links-style:hover {
+  color: #7e26bd !important;
+}
+.appbar-links-style:focus {
+  color: #7e26bd !important;
 }
 
 .mobile-menu {
@@ -63,7 +70,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .logo {
     margin: 0 50px !important;
   }
@@ -78,7 +85,7 @@
   padding: 200px 150px 30px 200px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .carousel-container {
     padding: 50px 30px 0 30px !important;
   }
@@ -91,7 +98,7 @@
   color: #3e4152;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .my-intro {
     display: flex;
     justify-content: center;
@@ -105,7 +112,7 @@
   /* margin-top: 50px; */
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .headline {
     margin-top: 0px;
   }
@@ -118,7 +125,7 @@
   margin-top: 20px;
   /* font-family: "Nunito", sans-serif !important; */
 }
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .author {
     font-size: 20px;
   }
@@ -132,12 +139,12 @@
 }
 
 .red-underline {
-  border-bottom: 4px solid #e21144;
+  border-bottom: 4px solid #4b0082;
   width: 60px;
   margin-top: 5px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .title {
     font-size: 14px;
   }
@@ -150,7 +157,7 @@
   line-height: 1.5em;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .desc {
     font-size: 13px;
     margin-bottom: 30px;
@@ -173,14 +180,14 @@
 }
 
 .hero-button:hover {
-  color: #e21144 !important;
-  border: 1px solid #e21144 !important;
+  color: #4b0082 !important;
+  border: 1px solid #4b0082 !important;
 }
 
 .hero-button:focus {
   color: #ffffff !important;
-  border: 1px solid #e21144 !important;
-  background: #e21144 !important;
+  border: 1px solid #4b0082 !important;
+  background: #4b0082 !important;
 }
 
 .carousel-grid {
@@ -191,7 +198,7 @@
   height: 400px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .carousel-grid {
     /* margin-top: -50px !important; */
   }
@@ -207,7 +214,7 @@
   height: 550px !important;
   /* border: 1px solid red; */
 }
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .carousel-box {
     width: 400px !important;
     height: 400px !important;
@@ -223,7 +230,7 @@
   height: 650px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 800px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   .carousel-img {
     height: 300px;
     width: 300px;
@@ -232,19 +239,35 @@
 
 .section-two {
   /* border: 1px solid red; */
-  height: 500px;
-  padding: 100px 50px 30px 100px !important;
+  height: auto;
+  padding: 100px 100px 50px 150px !important;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+  .section-two {
+    padding: 100px 30px 30px 30px !important;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .about-container {
 }
 
 .about-title {
-  color: #e21144;
+  color: #4b0082;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+  .about-title {
+    text-align: center;
+  }
 }
 
 .about {
@@ -253,4 +276,29 @@
   color: #3e4152;
   letter-spacing: 0.1em;
   font-size: 14px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+  .about {
+    margin-right: 0;
+  }
+}
+
+.parallax-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto;
+}
+
+.contact-container {
+  border: 1px solid red;
+  height: 500px;
+  padding: 100px 100px 50px 150px !important;
+}
+
+.footer-container {
+  border: 1px solid yellow;
+  height: 500px;
+  padding: 0 !important;
+  margin: 0 !important;
 }

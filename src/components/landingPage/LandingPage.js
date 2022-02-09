@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./landingpage.css";
 
 import Portfolio from "../portfolio/Portfolio";
+import ParallaxSection from "../parallax/ParallaxSection";
 
 import {
   Box,
@@ -11,9 +12,7 @@ import {
   IconButton,
   Typography,
   Menu,
-  Avatar,
   Button,
-  Tooltip,
   MenuItem,
   Grid,
 } from "@mui/material";
@@ -26,18 +25,15 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-import imgFive from "../../assets/images/imgFive.jpg";
-import blobThree from "../../assets/images/blobThree.svg";
+import blobFour from "../../assets/images/blobFour.svg";
 import resume from "../../assets/files/resume.pdf";
 
-// const pages = ["About", "Portfolio", "Resume", "Contact"];
 const pages = [
-  { name: "About", icon: <InfoIcon /> },
-  { name: "Portfolio", icon: <WorkIcon /> },
-  { name: "Resume", icon: <ArticleIcon /> },
-  { name: "Contact", icon: <PhoneIcon /> },
+  { name: "About", icon: <InfoIcon />, section: "s2" },
+  { name: "Portfolio", icon: <WorkIcon />, section: "s2" },
+  { name: "Resume", icon: <ArticleIcon />, section: "s2" },
+  { name: "Contact", icon: <PhoneIcon />, section: "s3" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const LandingPage = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -96,7 +92,12 @@ const LandingPage = () => {
                     }}>
                     {pages.map((page) => (
                       <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page.name}</Typography>
+                        {/* <Typography textAlign="center">{page.name}</Typography> */}
+                        <a
+                          href={`#${page.section}`}
+                          className="appbar-links-style">
+                          <div>{page.name}</div>
+                        </a>
                       </MenuItem>
                     ))}
                   </Menu>
@@ -121,33 +122,44 @@ const LandingPage = () => {
                       key={page.name}
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white", display: "block" }}>
-                      <div>
-                        <div>{page.icon}</div>
-                      </div>
-                      {page.name}
+                      <a
+                        href={`#${page.section}`}
+                        className="appbar-links-style">
+                        <div>
+                          <div>{page.icon}</div>
+                        </div>
+                        {page.name}
+                      </a>
                     </Button>
                   ))}
                 </Box>
 
-                {/* <Box sx={{ flexGrow: 0 }}> */}
                 <div className="appbar-socials">
-                  <a href="https://facebook.com" target="_blank">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer">
                     <FacebookIcon
                       fontSize="small"
-                      sx={{ color: "#e21144", marginRight: 2 }}
+                      sx={{ color: "#4b0082", marginRight: 2 }}
                     />
                   </a>
-                  <a href="https://instagram.com" target="_blank">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer">
                     <InstagramIcon
                       fontSize="small"
-                      sx={{ color: "#e21144", marginRight: 2 }}
+                      sx={{ color: "#4b0082", marginRight: 2 }}
                     />
                   </a>
-                  <a href="https://twitter.com" target="_blank">
-                    <TwitterIcon fontSize="small" sx={{ color: "#e21144" }} />
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer">
+                    <TwitterIcon fontSize="small" sx={{ color: "#4b0082" }} />
                   </a>
                 </div>
-                {/* </Box> */}
               </Toolbar>
             </Container>
           </AppBar>
@@ -194,7 +206,7 @@ const LandingPage = () => {
                 className="carousel-grid">
                 <div className="carousel-box">
                   <img
-                    src={blobThree}
+                    src={blobFour}
                     alt="Front end development"
                     className="carousel-img"
                   />
@@ -203,8 +215,8 @@ const LandingPage = () => {
             </Grid>
           </Container>
         </Box>
-        <Container maxWidth="xl" className="section-two">
-          <Grid container spacing={2}>
+        <Container maxWidth="xl">
+          <Grid container spacing={2} className="section-two" id="s2">
             <Grid
               item
               xs={12}
@@ -225,11 +237,26 @@ const LandingPage = () => {
                 nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut
                 vestibulum. Maecenas ipsum lacus.
               </div>
+              <div className="about">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                nisl eros, pulvinar facilisis justo mollis, auctor consequat
+                urna. Morbi a bibendum metus. Donec scelerisque sollicitudin.
+              </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
               <Portfolio />
             </Grid>
           </Grid>
+        </Container>
+        <Container maxWidth="xl" className="parallax-container">
+          <ParallaxSection />
+        </Container>
+
+        <Container maxWidth="lg" className="contact-container">
+          contact
+        </Container>
+        <Container maxWidth="xl" className="footer-container">
+          footer
         </Container>
       </Container>
     </div>

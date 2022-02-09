@@ -1,0 +1,24 @@
+.portfolio-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+  .portfolio-box {
+    justify-content: center;
+  }
+}
+
+.portfolio-label {
+  font-family: "Merriweather", serif !important;
+}
+
+.portfolio-content {
+  margin-bottom: 30px;
+  color: #3e4152;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-family: "Merriweather", serif !important;
+}
