@@ -24,6 +24,9 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import MailIcon from "@mui/icons-material/Mail";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import blobFour from "../../assets/images/blobFour.svg";
 import resume from "../../assets/files/resume.pdf";
@@ -252,8 +255,53 @@ const LandingPage = () => {
           <ParallaxSection />
         </Container>
 
-        <Container maxWidth="lg" className="contact-container">
-          contact
+        <Container maxWidth="lg" className="contact-container" id="s3">
+          <Grid container spacing={2} className="contact-box">
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={4}
+              lg={4}
+              xl={4}
+              className="contact-item">
+              <PhoneIphoneIcon sx={{ fontSize: 80, color: "#4b0082" }} />
+              <a href="tel:+233263105085" className="contact-links">
+                +233 26 310 5085
+              </a>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={4}
+              lg={4}
+              xl={4}
+              className="contact-item">
+              <MailIcon sx={{ fontSize: 80, color: "#4b0082" }} />
+              <a href="mailto:winiesom@gmail.com" className="contact-links">
+                winiesom@gmail.com
+              </a>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={4}
+              lg={4}
+              xl={4}
+              className="contact-item">
+              <LinkedInIcon sx={{ fontSize: 80, color: "#4b0082" }} />
+
+              <a
+                href="https://www.linkedin.com/in/winifred-esomonu-358502196/"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-links">
+                LinkedIn
+              </a>
+            </Grid>
+          </Grid>
         </Container>
         <Container maxWidth="xl" className="footer-container">
           footer

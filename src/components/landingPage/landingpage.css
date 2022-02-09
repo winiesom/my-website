@@ -291,9 +291,36 @@
 }
 
 .contact-container {
-  border: 1px solid red;
-  height: 500px;
+  height: auto;
   padding: 100px 100px 50px 150px !important;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0 !important;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #4b0082;
+  border-radius: 6px;
+  margin: 10px !important;
+  -webkit-flex-basis: 28% !important;
+  flex-basis: 28% !important;
+  max-width: 28% !important;
+}
+
+.contact-links {
+  text-decoration: none;
+  color: #4b0082;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 .footer-container {
