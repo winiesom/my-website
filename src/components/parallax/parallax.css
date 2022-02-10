@@ -6,7 +6,7 @@
   text-align: center;
   height: 500px;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .parallax-content {
     font-size: 25px;
     padding-top: 30px;

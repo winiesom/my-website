@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .portfolio-box {
     justify-content: center;
   }
@@ -55,7 +55,7 @@
   margin: 0 !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .jobs-container {
     padding: 50px !important;
   }
