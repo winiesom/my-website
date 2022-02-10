@@ -8,14 +8,14 @@
 
 .inner-container {
   background: #e9eff9;
-  height: 900px;
+  height: 950px;
   max-width: 100%;
 }
 
 .appbar-container {
   padding: 0 200px !important;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .appbar-container {
     padding: 0 30px !important;
   }
@@ -69,7 +69,7 @@
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .logo {
     margin: 0 50px !important;
   }
@@ -84,7 +84,7 @@
   padding: 200px 150px 30px 200px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-container {
     padding: 50px 30px 0 30px !important;
   }
@@ -97,7 +97,7 @@
   color: #3e4152;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .my-intro {
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@
   flex-direction: column;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .headline {
     margin-top: 0px;
   }
@@ -122,7 +122,7 @@
   font-weight: 600;
   margin-top: 20px;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .author {
     font-size: 20px;
   }
@@ -141,7 +141,7 @@
   margin-top: 5px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .title {
     font-size: 14px;
   }
@@ -154,7 +154,7 @@
   line-height: 1.5em;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .desc {
     font-size: 13px;
     margin-bottom: 30px;
@@ -195,7 +195,7 @@
   height: 400px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-grid {
   }
 }
@@ -207,7 +207,7 @@
   width: 600px !important;
   height: 550px !important;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-box {
     width: 400px !important;
     height: 400px !important;
@@ -225,7 +225,7 @@
   border: 3px solid #654ea385;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-img {
     height: 300px;
     width: 300px;
@@ -237,7 +237,7 @@
   padding: 100px 100px 50px 150px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .section-two {
     padding: 100px 30px 30px 30px !important;
     text-align: justify;
@@ -258,7 +258,7 @@
   font-weight: 500;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .about-title {
     text-align: center;
   }
@@ -272,7 +272,7 @@
   font-size: 14px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .about {
     margin-right: 0;
   }
@@ -294,7 +294,7 @@
   background: linear-gradient(to left, #eaafc8, #654ea3);
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .contact-container {
     padding: 0 !important;
   }
@@ -310,7 +310,7 @@
   padding: 100px 100px 50px 150px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .contact-box {
     padding: 50px 30px 50px 30px !important;
     width: 100% !important;
@@ -336,7 +336,7 @@
   border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .contact-item {
     -webkit-flex-basis: 100% !important;
     flex-basis: 100% !important;
@@ -361,7 +361,7 @@
   padding: 100px 50px 100px 280px !important;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .footer-container {
     padding: 50px 50px !important;
   }
@@ -383,7 +383,7 @@
   color: #7e26bd;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .footer-title {
     position: relative;
   }
@@ -396,7 +396,7 @@
   line-height: 2rem;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 950px) {
   .footer-links-box {
     margin-top: 5px;
   }
