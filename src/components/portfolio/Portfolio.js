@@ -46,7 +46,7 @@ const Portfolio = () => {
         </TabPanel>
         <TabPanel value="2">
           <div className="portfolio-content">
-            <iframe
+            {/* <iframe
               src={resume}
               title="Winifred Esomonu Resume"
               width="100%"
@@ -54,7 +54,17 @@ const Portfolio = () => {
               style={{
                 borderBottom: "2px solid #333",
                 borderRadius: 5,
-              }}></iframe>
+              }}></iframe> */}
+
+            <object
+              data={resume}
+              width="100%"
+              height="300px"
+              type="text/html"
+              style={{
+                borderBottom: "2px solid #333",
+                borderRadius: 5,
+              }}></object>
           </div>
         </TabPanel>
       </TabContext>
