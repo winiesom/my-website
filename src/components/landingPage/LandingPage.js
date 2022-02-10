@@ -378,7 +378,9 @@ const LandingPage = () => {
                     <MailIcon
                       sx={{ fontSize: 20, marginRight: 1, marginTop: 0.5 }}
                     />
-                    <div>winiesom@gmail.com</div>
+                    <div style={{ textTransform: "lowercase" }}>
+                      winiesom@gmail.com
+                    </div>
                   </div>
                 </a>
               </div>
