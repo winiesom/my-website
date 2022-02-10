@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./portfolio.css";
 
 import { Container, Grid } from "@mui/material";
+import SettingsBackupRestoreIcon from "@mui/icons-material/SettingsBackupRestore";
 
 import qcoga from "../../assets/images/qcoga.png";
 import memories from "../../assets/images/memories.png";
@@ -39,7 +41,23 @@ const Jobs = () => {
   return (
     <div>
       <Container maxWidth="xl" className="jobs-container">
-        <div className="jobs-title">Projects</div>
+        <Grid container spacing={2} sx={{ marginBottom: 3 }}>
+          <Grid item xs={6} className="jobs-title">
+            {" "}
+            Projects
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            sx={{ display: "flex", justifyContent: "flex-end" }}>
+            <Link to="/">
+              <SettingsBackupRestoreIcon
+                sx={{ fontSize: 30, color: "#4c008267" }}
+              />
+            </Link>
+          </Grid>
+        </Grid>
+        {/* <div className="jobs-title">Projects</div> */}
         <Grid container spacing={2} className="jobs-box">
           {urls &&
             urls.map((item, index) => (
