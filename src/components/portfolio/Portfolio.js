@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
-import Button from "@mui/material/Button";
 import { TabContext, TabList, TabPanel } from "@material-ui/lab/";
 
 import "./portfolio.css";
@@ -41,10 +40,6 @@ const Portfolio = () => {
           </div>
 
           <div className="portfolio-content">
-            {/* <Button className="hero-button" style={{ marginRight: 20 }}>
-              See Portfolio
-            </Button> */}
-
             <Link to="portfolio" className="portfolio-button">
               See Portfolio
             </Link>
