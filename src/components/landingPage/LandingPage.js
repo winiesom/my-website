@@ -28,6 +28,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import imgFour from "../../assets/images/imgFour.jpg";
+import logo from "../../assets/images/logo.jpg";
 import resume from "../../assets/files/resume.pdf";
 
 const pages = [
@@ -63,7 +64,12 @@ const LandingPage = () => {
                   className="logo"
                   component="div"
                   sx={{ mr: 0, display: { xs: "none", md: "flex" } }}>
-                  WE
+                  <img
+                    src={logo}
+                    alt="Front end developer"
+                    width="50px"
+                    height="50px"
+                  />
                 </Typography>
 
                 <Box
@@ -111,7 +117,12 @@ const LandingPage = () => {
                   className="logo"
                   component="div"
                   sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                  WE
+                  <img
+                    src={logo}
+                    alt="Front end developer"
+                    width="50px"
+                    height="50px"
+                  />
                 </Typography>
                 <Box
                   sx={{
