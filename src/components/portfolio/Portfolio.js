@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import { TabContext, TabList, TabPanel } from "@material-ui/lab/";
 
+import resume from "../../assets/files/resume.pdf";
+
 import "./portfolio.css";
 
 const Portfolio = () => {
@@ -28,15 +30,12 @@ const Portfolio = () => {
         </Box>
         <TabPanel value="1">
           <div className="portfolio-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-            Morbi a bibendum metus. Donec scelerisque sollicitudin.
+            Here you will find a list containing projects I've worked on using a
+            range of technologies.
           </div>
           <div className="portfolio-content">
-            Duis tincidunt laoreet ex, in pretium orci vestibulum eget. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Duis pharetra luctus lacus ut vestibulum.
-            Maecenas ipsum lacus.
+            From UI/UX to fully responsive, well optimized websites and web
+            applications, kindly checkout some of my latest projects.
           </div>
 
           <div className="portfolio-content">
@@ -47,15 +46,15 @@ const Portfolio = () => {
         </TabPanel>
         <TabPanel value="2">
           <div className="portfolio-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-            Morbi a bibendum metus. Donec scelerisque sollicitudin.
-          </div>
-          <div className="portfolio-content">
-            Duis tincidunt laoreet ex, in pretium orci vestibulum eget. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Duis pharetra luctus lacus ut vestibulum.
-            Maecenas ipsum lacus.
+            <iframe
+              src={resume}
+              title="Winifred Esomonu Resume"
+              width="100%"
+              height="300"
+              style={{
+                borderBottom: "2px solid #333",
+                borderRadius: 5,
+              }}></iframe>
           </div>
         </TabPanel>
       </TabContext>

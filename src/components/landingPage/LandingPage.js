@@ -27,7 +27,7 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import blobFour from "../../assets/images/blobFour.svg";
+import imgFour from "../../assets/images/imgFour.jpg";
 import resume from "../../assets/files/resume.pdf";
 
 const pages = [
@@ -47,6 +47,8 @@ const LandingPage = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const openSkills = () => {};
 
   return (
     <div>
@@ -182,8 +184,8 @@ const LandingPage = () => {
                   <div className="author">Frontend Developer</div>
 
                   <div className="desc">
-                    Hi, I am Winifred. UI/UX designer and web developer. Lorem
-                    ipsum dolor sit amet. Adipiscing consectetur.
+                    Hi, I am Winifred. UI/UX designer and web developer.
+                    {/* Lorem ipsum dolor sit amet. Adipiscing consectetur. */}
                   </div>
                   <div className="hero-button-box">
                     <Button
@@ -209,7 +211,7 @@ const LandingPage = () => {
                 className="carousel-grid">
                 <div className="carousel-box">
                   <img
-                    src={blobFour}
+                    src={imgFour}
                     alt="Front end development"
                     className="carousel-img"
                   />
@@ -230,20 +232,30 @@ const LandingPage = () => {
               className="about-container">
               <div className="about-title">What I do</div>
               <div className="about">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                nisl eros, pulvinar facilisis justo mollis, auctor consequat
-                urna. Morbi a bibendum metus. Donec scelerisque sollicitudin.
+                My name is Winifred Esomonu. I am a front end developer. I am
+                very passionate and dedicated to my work, with 3+ years of
+                experience as a professional front end developer, I have
+                acquired the skills and best practices required to build user
+                friendly, high impact, innovative solutions.
               </div>
               <div className="about">
-                Duis tincidunt laoreet ex, in pretium orci vestibulum eget.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut
-                vestibulum. Maecenas ipsum lacus.
+                My main work experience is in front end web development but I
+                have a passion for design as I also believe it is a very vital
+                part of creating modern solutions.
               </div>
               <div className="about">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                nisl eros, pulvinar facilisis justo mollis, auctor consequat
-                urna. Morbi a bibendum metus. Donec scelerisque sollicitudin.
+                Below are a list of skills I possess and technologies I use to
+                achieve innovative web solutions while maintaining brand
+                consistency.
+              </div>
+
+              <div>
+                <Button
+                  className="hero-button"
+                  style={{ marginRight: 20 }}
+                  onClick={openSkills}>
+                  See Skills
+                </Button>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
