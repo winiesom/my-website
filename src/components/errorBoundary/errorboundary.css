@@ -1,0 +1,9 @@
+.error-container {
+  background: #e9eff9;
+  height: 100vh;
+  color: #4c0082b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

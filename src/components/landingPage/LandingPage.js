@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./landingpage.css";
-
 import Portfolio from "../portfolio/Portfolio";
 import ParallaxSection from "../parallax/ParallaxSection";
 
