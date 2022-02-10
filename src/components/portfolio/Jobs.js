@@ -51,7 +51,7 @@ const Jobs = () => {
                     href={item.url}
                     target="_blank"
                     rel="noreferrer">
-                    view project
+                    View project
                   </a>
                 </div>
               </Grid>
