@@ -51,8 +51,6 @@ const LandingPage = () => {
     setAnchorElNav(null);
   };
 
-  const openSkills = () => {};
-
   return (
     <div>
       <Container className="main-container">

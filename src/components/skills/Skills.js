@@ -4,15 +4,11 @@ import {
   Dialog,
   Fab,
   Grid,
-  Menu,
-  MenuItem,
   List,
   ListItem,
-  ListItemText,
   ListItemAvatar,
   Avatar,
   Divider,
-  Typography,
 } from "@mui/material";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import "../landingPage/landingpage.css";
