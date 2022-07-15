@@ -71,7 +71,8 @@
 }
 @media only screen and (min-width: 200px) and (max-width: 950px) {
   .logo {
-    margin: 0 50px !important;
+    margin: 0 30px !important;
+    padding: 0 20px;
   }
 }
 
@@ -197,6 +198,7 @@
 
 @media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-grid {
+    /* width: 100px !important; */
   }
 }
 
@@ -209,7 +211,7 @@
 }
 @media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-box {
-    width: 400px !important;
+    width: 100% !important;
     height: 400px !important;
     display: flex !important;
     justify-content: center !important;
@@ -227,8 +229,8 @@
 
 @media only screen and (min-width: 200px) and (max-width: 950px) {
   .carousel-img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
 }
 
