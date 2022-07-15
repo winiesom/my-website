@@ -61,6 +61,7 @@ const Portfolio = () => {
               width="100%"
               height="300px"
               type="text/html"
+              aria-label="Resume"
               style={{
                 borderBottom: "2px solid #333",
                 borderRadius: 5,
