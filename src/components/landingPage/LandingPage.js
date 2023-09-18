@@ -31,11 +31,13 @@ import imgFour from "../../assets/images/imgFour.jpg";
 import logo from "../../assets/images/logo.jpg";
 import resume from "../../assets/files/resume.pdf";
 
+import Skills from "../skills/Skills";
+
 const pages = [
-  { name: "About", icon: <InfoIcon />, section: "s2" },
-  { name: "Portfolio", icon: <WorkIcon />, section: "s2" },
-  { name: "Resume", icon: <ArticleIcon />, section: "s2" },
-  { name: "Contact", icon: <PhoneIcon />, section: "s3" },
+  { name: "About", icon: <InfoIcon />, section: "about" },
+  { name: "Portfolio", icon: <WorkIcon />, section: "about" },
+  { name: "Resume", icon: <ArticleIcon />, section: "about" },
+  { name: "Contact", icon: <PhoneIcon />, section: "contact" },
 ];
 
 const LandingPage = () => {
@@ -48,8 +50,6 @@ const LandingPage = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-  const openSkills = () => {};
 
   return (
     <div>
@@ -205,7 +205,7 @@ const LandingPage = () => {
                       download>
                       Download CV
                     </Button>
-                    <Button className="hero-button" href="#s3">
+                    <Button className="hero-button" href="#contact">
                       Hire Me
                     </Button>
                   </div>
@@ -231,7 +231,7 @@ const LandingPage = () => {
           </Container>
         </Box>
         <Container maxWidth="xl">
-          <Grid container spacing={2} className="section-two" id="s2">
+          <Grid container spacing={2} className="section-two" id="about">
             <Grid
               item
               xs={12}
@@ -260,12 +260,7 @@ const LandingPage = () => {
               </div>
 
               <div>
-                <Button
-                  className="hero-button"
-                  style={{ marginRight: 20 }}
-                  onClick={openSkills}>
-                  See Skills
-                </Button>
+                <Skills />
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -277,7 +272,7 @@ const LandingPage = () => {
           <ParallaxSection />
         </Container>
 
-        <Container maxWidth="lg" className="contact-container" id="s3">
+        <Container maxWidth="lg" className="contact-container" id="contact">
           <Grid container spacing={2} className="contact-box">
             <Grid
               item
@@ -335,16 +330,16 @@ const LandingPage = () => {
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <div className="footer-title">Explore</div>
               <div className="footer-links-box">
-                <a href="#s2" className="footer-link">
+                <a href="#about" className="footer-link">
                   About
                 </a>
-                <a href="#s2" className="footer-link">
+                <a href="#about" className="footer-link">
                   portfolio
                 </a>
-                <a href="#s2" className="footer-link">
+                <a href="#about" className="footer-link">
                   resume
                 </a>
-                <a href="#s3" className="footer-link">
+                <a href="#contact" className="footer-link">
                   contact
                 </a>
               </div>

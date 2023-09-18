@@ -9,6 +9,7 @@ import qcoga from "../../assets/images/qcoga.png";
 import memories from "../../assets/images/memories.png";
 import spmWebsite from "../../assets/images/spmWebsite.png";
 import spmApp from "../../assets/images/spmApp.png";
+import leadpayroll from "../../assets/images/leadpayroll.png";
 
 const urls = [
   {
@@ -34,6 +35,12 @@ const urls = [
     id: 4,
     pic: spmApp,
     desc: "Smart performance appraisal",
+  },
+  {
+    url: "https://leadpayroll.com/",
+    id: 5,
+    pic: leadpayroll,
+    desc: "Lead Payroll",
   },
 ];
 
