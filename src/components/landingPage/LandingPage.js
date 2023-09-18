@@ -244,7 +244,7 @@ const LandingPage = () => {
               <div className="about-title">What I do</div>
               <div className="about">
                 My name is Winifred Esomonu. I am a front end developer. I am
-                very passionate and dedicated to my work, with 3+ years of
+                very passionate and dedicated to my work, with 4 years of
                 experience as a professional front end developer, I have
                 acquired the skills and best practices required to build user
                 friendly, high impact, innovative solutions.
@@ -261,12 +261,6 @@ const LandingPage = () => {
               </div>
 
               <div>
-                {/* <Button
-                  className="hero-button"
-                  style={{ marginRight: 20 }}
-                  onClick={openSkills}>
-                  See Skills
-                </Button> */}
                 <Skills />
               </div>
             </Grid>
@@ -289,11 +283,11 @@ const LandingPage = () => {
               lg={4}
               xl={4}
               className="contact-item">
-              <a href="tel:+233263105085" className="contact-links">
+              <a href="tel:+447776287066" className="contact-links">
                 <PhoneIphoneIcon
                   sx={{ fontSize: 70, color: "#ffffffb0", marginBottom: 3 }}
                 />
-                +233 26 310 5085
+                +44 777 628 7066
               </a>
             </Grid>
             <Grid
@@ -369,11 +363,11 @@ const LandingPage = () => {
                   instagram
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://github.com/winiesom"
                   target="_blank"
                   rel="noreferrer"
                   className="footer-link">
-                  twitter
+                  GitHub
                 </a>
                 <a
                   href="https://www.linkedin.com/in/winifred-esomonu-358502196/"
@@ -387,13 +381,13 @@ const LandingPage = () => {
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <div className="footer-title">Contact Info</div>
               <div className="footer-links-box">
-                <a href="tel:+2349131301499" className="footer-link">
+                <a href="tel:+447776287066" className="footer-link">
                   <div className="footer-link-icon">
                     <PhoneIcon
                       sx={{ fontSize: 20, marginRight: 1, marginTop: 0.5 }}
                     />
 
-                    <div>+234 913 1301 499</div>
+                    <div>+44 777 628 7066</div>
                   </div>
                 </a>
                 <a href="mailto:winiesom@gmail.com" className="footer-link">
